@@ -1,7 +1,7 @@
 <template>
   <CollapsiblePanel 
     :header="$t('about.education.title')"
-    :expanded="$t('true')"
+    :expanded=true
     >
     <template>
       <EducationIcon class="me-2 h-8 w-8" />
