@@ -50,6 +50,7 @@ export interface ProjectEntry {
   description: string
   src: string
   url: string
+  id: string
 }
 
 export interface Contact {

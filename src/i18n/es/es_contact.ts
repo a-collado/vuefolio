@@ -6,7 +6,7 @@ const contact: Contact = {
     'Si deseas ponerte en contacto conmigo, puedes hacerlo a través de mis redes sociales o vía email.',
   social: 'Aquí están mis cuentas de redes sociales y mi dirección de correo electrónico:',
   //Mantén los corchetes y comillas alrededor de @ -> {'@'}
-  email: "johndoe{'@'}mail.com",
+  email: "alex.collado{'@'}proton.me",
   copy: 'Copiar',
   copied: 'Copiado',
   form: 'Alternativamente, puedes usar este formulario para enviarme un mensaje:',

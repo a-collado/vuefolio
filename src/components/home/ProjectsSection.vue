@@ -27,6 +27,7 @@
           />
         </li>
       </ul>
+      <!-- Estas son las de abjo, las pequeñas !-->
       <ul class="grid gap-10 md:grid-cols-2">
         <li class="flex w-full" v-for="project in other_projects" :key="project.name">
           <ProjectCardSmall

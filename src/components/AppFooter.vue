@@ -47,7 +47,7 @@
                   attributeName="stroke-dashoffset"
                   begin="0.6s"
                   dur="0.2s"
-                  values="14;28"
+                  values="14;John28"
                 />
               </path>
             </g>
@@ -72,7 +72,7 @@
               <animate fill="freeze" attributeName="height" begin="0.8s" dur="0.6s" values="0;5" />
             </rect>
           </svg>
-          <h1 class="self-center text-2xl font-semibold">John Doe</h1>
+          <h1 class="self-center text-2xl font-semibold">Alex Collado Garrido</h1>
         </div>
         <!-- Leave one attribution, delete the other -->
 
@@ -132,23 +132,9 @@
             </li>
           </ul>
         </div>
-        <div class="space-y-3">
-          <h2 class="uppercase">Social media</h2>
-          <div class="flex justify-start space-x-3">
-            <a rel="noopener noreferrer" href="#" title="Facebook" class="flex items-center p-1">
-              <FacebookIcon class="h-5 w-5" />
-            </a>
-            <a rel="noopener noreferrer" href="#" title="Twitter" class="flex items-center p-1">
-              <TwitterIcon class="h-5 w-5" />
-            </a>
-            <a rel="noopener noreferrer" href="#" title="Instagram" class="flex items-center p-1">
-              <InstagramIcon class="h-5 w-5" />
-            </a>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="py-3 text-center text-sm">© 2024 John Doe.</div>
+    <div class="py-3 text-center text-sm">© 2025 Alex Collado Garrido.</div>
   </footer>
 </template>
 

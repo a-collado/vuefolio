@@ -104,54 +104,6 @@
                 </template>
               </GlassButton>
             </a>
-            <a
-              v-if="$t('hero.profiles.youtube') != ''"
-              :href="$t('hero.profiles.youtube')"
-              target="_blank"
-              rel="noopener"
-            >
-              <GlassButton size="small" bg="bg-red-700" title="Youtube channel">
-                <template #icon>
-                  <YoutubeIcon class="h-6 w-6" />
-                </template>
-              </GlassButton>
-            </a>
-            <a
-              v-if="$t('hero.profiles.twitter') != ''"
-              :href="$t('hero.profiles.twitter')"
-              target="_blank"
-              rel="noopener"
-            >
-              <GlassButton size="small" bg="bg-slate-800" title="Twitter profile">
-                <template #icon>
-                  <TwitterIcon class="h-6 w-6" />
-                </template>
-              </GlassButton>
-            </a>
-            <a
-              v-if="$t('hero.profiles.instagram') != ''"
-              :href="$t('hero.profiles.instagram')"
-              target="_blank"
-              rel="noopener"
-            >
-              <GlassButton size="small" bg="bg-rose-700" title="Instagram profile">
-                <template #icon>
-                  <InstagramIcon class="h-6 w-6" />
-                </template>
-              </GlassButton>
-            </a>
-            <a
-              v-if="$t('hero.profiles.facebook') != ''"
-              :href="$t('hero.profiles.facebook')"
-              target="_blank"
-              rel="noopener"
-            >
-              <GlassButton size="small" bg="bg-blue-800" title="Facebook profile">
-                <template #icon>
-                  <FacebookIcon class="h-6 w-6" />
-                </template>
-              </GlassButton>
-            </a>
           </div>
         </span>
         <span class="h-1 w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
@@ -173,12 +125,8 @@ import GithubIcon from '@/components/icons/GithubIcon.vue'
 import LinkedinIcon from '@/components/icons/LinkedinIcon.vue'
 import ContactForm from './ContactSection-Form.vue'
 import { ref } from 'vue'
-import YoutubeIcon from '@/components/icons/YoutubeIcon.vue'
-import TwitterIcon from '@/components/icons/TwitterIcon.vue'
-import InstagramIcon from '@/components/icons/InstagramIcon.vue'
-import FacebookIcon from '@/components/icons/FacebookIcon.vue'
 
-const email = 'contact@ralo.dev'
+const email = 'alex.collado@proton.me'
 const copied = ref(false)
 
 function copyEmail() {

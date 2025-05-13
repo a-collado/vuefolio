@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import GlassButton from '@/components/GlassButton.vue'
 // Get your key for free in: https://web3forms.com/
-const WEB3FORMS_ACCESS_KEY = 'YOUR_ACCESS_KEY'
+const WEB3FORMS_ACCESS_KEY = '2202a93b-6f01-4a16-907a-28e739d43344'
 const name = ref('')
 const email = ref('')
 const message = ref('')

@@ -1,20 +1,20 @@
 import type { Hero } from '@/types'
 
 const hero: Hero = {
-  title: 'Hola, mi nombre es John Doe',
+  title: 'Hola, mi nombre es Alex Collado Garrido',
   subtitle:
-    'He dominado el arte de convertir el café en código y el caos en orden. Mi pasión por resolver problemas es igualada solo por mi amor por hacer panqueques caseros los domingos por la mañana.',
-  name: 'John Phillip Doe',
-  url: 'https://john-does.com/',
+    'Ingeniero Multimedia con interés en el desarrollo de videojuegos, especialmente en la programación de gameplay. Siempre estoy abierto a nuevas experiencias, me gusta enfocarme en la resolución de problemas y quiero dedicarme a crear experiencias interactivas para que todos las disfruten.',
+  name: 'Alex Collado Garrido',
+  url: 'https://a-collado.com/',
   contact_button: 'Contáctame',
   //Si un perfil tiene una cadena vacía '', el botón no se renderizará
   profiles: {
-    linkedin: 'https://linkedin.com/in/johndoe-innovator',
-    github: 'https://github.com/johndoethecoderohyeah',
-    youtube: 'https://youtube.com/johndoesstuff',
-    twitter: 'https://twitter.com/johndoetechuncensored',
+    linkedin: 'www.linkedin.com/in/alex-collado-garrido',
+    github: 'https://github.com/a-collado',
+    youtube: '',
+    twitter: '',
     instagram: '',
-    facebook: 'https://facebook.com/johndoepersonalstuff'
+    facebook: ''
   },
   home: 'Inicio'
 }
