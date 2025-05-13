@@ -2,11 +2,13 @@
   <article class="relative w-full rounded-xl border bg-white py-6 shadow-md">
     <div class="relative flex flex-col gap-2 font-medium md:flex-row">
       <div class="order-2 flex w-full flex-col justify-center gap-y-2 px-6 py-3 md:w-1/2 md:px-2">
-        <h2
-          class="open-sans text-ltext1 text-center text-2xl font-bold text-slate-700 sm:text-start sm:text-4xl"
-        >
-          {{ name }}
-        </h2>
+        <a v-if="art != ''" :href="art" :title="`${props.name} in more detail`" target="_blank" rel="noreferrer noopener">
+		<h2
+		  class="open-sans text-ltext1 text-center text-2xl font-bold text-slate-700 sm:text-start sm:text-4xl"
+		>
+		  {{ name }}
+		</h2>
+	</a>
         <div
           class="source-sans my-2 flex flex-wrap justify-center gap-2 font-medium sm:justify-start"
         >
@@ -49,28 +51,38 @@
               {{ $t('projects.website') }}
             </GlassButton>
           </a>
+          <a v-if="art != ''" :href="art" target="_blank" rel="noreferrer noopener">
+            <GlassButton v-if="art" :disabled="!art" padding="16" :title="`${props.name} in more detail`">
+              <template #icon>
+                <ArtStationIcon class="h-6 w-6" />
+              </template>
+              {{ $t('projects.artstation') }}
+            </GlassButton>
+          </a>
         </div>
       </div>
       <div class="group mx-auto max-w-[90vw] px-6 md:w-1/2 md:px-0">
         <div class="container">
-          <div class="tilt-box-wrap">
-            <span class="t_over"></span>
-            <span class="t_over"></span>
-            <span class="t_over"></span>
-            <span class="t_over"></span>
-            <span class="t_over"></span>
-            <span class="t_over"></span>
-            <span class="t_over"></span>
-            <span class="t_over"></span>
-            <span class="t_over"></span>
-            <div class="tilt-box">
-              <img
-                :src="getImageUrl()"
-                :alt="name + ' main image'"
-                class="mx-auto object-cover object-center sm:max-h-[300px]"
-              />
+        <a v-if="art != ''" :href="art" :title="`${props.name} in more detail`" target="_blank" rel="noreferrer noopener">
+            <div class="tilt-box-wrap">
+              <span class="t_over"></span>
+              <span class="t_over"></span>
+              <span class="t_over"></span>
+              <span class="t_over"></span>
+              <span class="t_over"></span>
+              <span class="t_over"></span>
+              <span class="t_over"></span>
+              <span class="t_over"></span>
+              <span class="t_over"></span>
+              <div class="tilt-box">
+                <img
+                  :src="getImageUrl()"
+                  :alt="name + ' main image'"
+                  class="mx-auto object-cover object-center sm:max-h-[300px]"
+                />
+              </div>
             </div>
-          </div>
+	  </a>
         </div>
       </div>
     </div>
@@ -81,6 +93,7 @@
 import GlassButton from '@/components/GlassButton.vue'
 import WebIcon from '@/components/icons/WebIcon.vue'
 import GithubIcon from '@/components/icons/GithubIcon.vue'
+import ArtStationIcon from '@/components/icons/ArtStationIcon.vue'
 
 const props = defineProps({
   name: {
@@ -103,6 +116,10 @@ const props = defineProps({
     type: String,
     required: false
   },
+  art: {
+    type: String,
+    required: false
+  },
   read: {
     type: Boolean,
     required: false
@@ -110,6 +127,10 @@ const props = defineProps({
   techstack: {
     type: Array<String>,
     required: false
+  },
+  id: {
+    type: String,
+    default: 'robobot'
   }
 })
 

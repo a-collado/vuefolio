@@ -50,6 +50,7 @@ export interface ProjectEntry {
   description: string
   src: string
   url: string
+  art: string
   id: string
 }
 
@@ -95,6 +96,7 @@ export interface Hero {
     twitter: string
     instagram: string
     facebook: string
+    artstation: string
   }
   home: string
 }
@@ -103,6 +105,7 @@ export interface Projects {
   title: string
   source: string
   website: string
+  artstation: string
   main: ProjectEntry[]
   other: ProjectEntry[]
 }

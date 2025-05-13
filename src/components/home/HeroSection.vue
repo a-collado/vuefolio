@@ -93,6 +93,18 @@
             </template>
           </GlassButton>
         </a>
+	<a
+          v-if="$t('hero.profiles.artstation') != ''"
+          :href="$t('hero.profiles.artstation')"
+          target="_blank"
+          rel="noopener"
+        >
+          <GlassButton size="small" bg="bg-blue-800" title="ArtStation profile">
+            <template #icon>
+              <ArtStationIcon class="h-6 w-6" />
+            </template>
+          </GlassButton>
+        </a>
       </div>
     </div>
     <!-- Icon Scroll Credits: http://www.hnslack.xyz/ -->
@@ -123,6 +135,7 @@ import YoutubeIcon from '../icons/YoutubeIcon.vue'
 import TwitterIcon from '../icons/TwitterIcon.vue'
 import InstagramIcon from '../icons/InstagramIcon.vue'
 import FacebookIcon from '../icons/FacebookIcon.vue'
+import ArtStationIcon from '../icons/ArtStationIcon.vue'
 </script>
 
 <style>

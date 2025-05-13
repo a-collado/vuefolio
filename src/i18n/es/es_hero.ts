@@ -14,7 +14,8 @@ const hero: Hero = {
     youtube: '',
     twitter: '',
     instagram: '',
-    facebook: ''
+    facebook: '',
+    artstation: 'https://www.artstation.com/a-collado'
   },
   home: 'Inicio'
 }

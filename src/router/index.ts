@@ -1,5 +1,5 @@
 import LandingView from '@/views/HomeView.vue'
-import ProjectView from '@/views/ProjectView.vue'
+//import ProjectView from '@/views/ProjectView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -9,12 +9,12 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: LandingView
-    },
-    {
+    }
+    /*{
       path: '/projects/:id',
       name: ':project',
       component: ProjectView
-    }
+    }*/
   ],
   scrollBehavior(to) {
     if (to.hash) {

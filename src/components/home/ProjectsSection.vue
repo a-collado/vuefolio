@@ -16,7 +16,7 @@
         {{ $t('projects.title') }}
       </h1>
       <ul class="space-y-8 pb-10 pt-8">
-        <li v-for="project in main_projects" :key="project.name">
+        <li v-for="project in main_projects" :key="project.id">
           <ProjectCard
             :name="project.name"
             :techstack="project.techstack"
@@ -24,6 +24,8 @@
             :description="project.description"
             :src="project.src"
             :url="project.url"
+	    :art="project.art"
+            :id="project.id"
           />
         </li>
       </ul>

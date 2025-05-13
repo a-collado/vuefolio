@@ -105,20 +105,21 @@
           </ul>
         </div>
         <div class="space-y-3">
-          <h2 class="uppercase">Navigation 2</h2>
+          <h2 class="uppercase">Projects</h2>
           <ul class="space-y-1">
             <li>
-              <a href="#" target="_blank">Link 1</a>
+              <a href="https://www.artstation.com/artwork/982OVO" target="_blank">Robo Bobot</a>
             </li>
             <li>
-              <a href="#" target="_blank">Link 2</a>
+              <a href="https://www.artstation.com/artwork/4NedOk" target="_blank">Mad Barista</a>
             </li>
             <li>
-              <a href="#" target="_blank">Link 3</a>
+              <a href="https://www.artstation.com/artwork/lG8Le5" target="_blank">Ikarus' Odissey</a>
             </li>
           </ul>
         </div>
-        <div class="space-y-3">
+        <!--
+	<div class="space-y-3">
           <h2 class="uppercase">Navigation 3</h2>
           <ul class="space-y-1">
             <li>
@@ -132,14 +133,9 @@
             </li>
           </ul>
         </div>
+	!-->
       </div>
     </div>
     <div class="py-3 text-center text-sm">© 2025 Alex Collado Garrido.</div>
   </footer>
 </template>
-
-<script setup lang="ts">
-import InstagramIcon from './icons/InstagramIcon.vue'
-import FacebookIcon from './icons/FacebookIcon.vue'
-import TwitterIcon from './icons/TwitterIcon.vue'
-</script>
